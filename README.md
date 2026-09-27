@@ -13,9 +13,7 @@ subtitles, and renders an MP4 ready for your README, your website, social posts 
 
 ## Example video
 
-Example video
-
-[![SimplyBar promo video: click to watch (29 s, 1920 x 1080, with sound)](assets/simplybar-promo-poster.jpg)](assets/simplybar-promo.mp4)
+https://github.com/user-attachments/assets/f5201cb8-1857-4e28-ada7-00c3b93f18bb
 
 The 29-second launch video of [SimplyBar](https://github.com/Iliesseu28/SimplyBar), a free macOS menu bar app,
 made with this skill. Its full source is public: [`tools/promo-video`](https://github.com/Iliesseu28/SimplyBar/tree/main/tools/promo-video).
