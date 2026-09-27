@@ -1,0 +1,30 @@
+{
+  "voice": "Charon",
+  "models": {
+    "vertex": "gemini-2.5-pro-tts",
+    "gemini-api": "gemini-2.5-pro-preview-tts"
+  },
+  "style": "Read this line of a short product video in English, in a warm, upbeat and confident voice, at a lively, brisk pace, without adding any words:",
+  "lines": [
+    {
+      "id": "intro",
+      "start": 0.25,
+      "text": "Meet YourApp, the simple way to keep your day on track."
+    },
+    {
+      "id": "features",
+      "start": 4.7,
+      "text": "Switch on what you need: reminders, focus mode and sync."
+    },
+    {
+      "id": "done",
+      "start": 9.0,
+      "text": "Click Done, and you are all set."
+    },
+    {
+      "id": "outro",
+      "start": 12.5,
+      "text": "YourApp. Free and simple, on the App Store."
+    }
+  ]
+}

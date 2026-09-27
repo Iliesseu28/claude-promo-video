@@ -1,0 +1,16 @@
+{
+  "name": "claude-promo-video",
+  "description": "A Claude Code plugin that makes promo videos of your app",
+  "owner": {
+    "name": "Iliesseu28",
+    "email": "iliesseu28@users.noreply.github.com"
+  },
+  "plugins": [
+    {
+      "name": "promo-video",
+      "description": "Make a 15 to 30 second promo video of your app with Remotion: real views, Gemini voice-over, word-synced subtitles, animated cursor, zooms and clicks",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

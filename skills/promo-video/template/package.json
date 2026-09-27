@@ -1,0 +1,30 @@
+{
+  "name": "promo-video",
+  "version": "1.0.0",
+  "description": "Promo video of an app, made with Remotion (template of the claude-promo-video plugin)",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@remotion/cli": "4.0.529",
+    "@remotion/media": "4.0.529",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.529"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.529",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.19.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "predev": "python3 scripts/prepare.py",
+    "dev": "remotion studio",
+    "prestill": "python3 scripts/prepare.py",
+    "still": "remotion still Promo out/still.png --frame=365",
+    "render": "bash scripts/render.sh",
+    "lint": "eslint src && tsc"
+  }
+}

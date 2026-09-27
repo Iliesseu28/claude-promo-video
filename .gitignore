@@ -1,0 +1,10 @@
+node_modules/
+out/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.env
+.stfolder
+.stignore
+.stversions/

@@ -1,0 +1,13 @@
+{
+  "name": "promo-video",
+  "version": "1.0.0",
+  "description": "Make a 15 to 30 second promo video of your app with Remotion: the app's real views, a Gemini text-to-speech voice-over, word-synced subtitles, and an animated cursor with zooms and clicks",
+  "author": {
+    "name": "Iliesseu28",
+    "email": "iliesseu28@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/Iliesseu28/claude-promo-video",
+  "repository": "https://github.com/Iliesseu28/claude-promo-video",
+  "license": "MIT",
+  "keywords": ["video", "promo", "remotion", "gemini", "text-to-speech", "subtitles", "app-store", "app-preview", "marketing"]
+}

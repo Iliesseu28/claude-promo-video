@@ -1,0 +1,47 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  plugin:
+    name: plugin and skill
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Manifests, front matter, JSON, no long dash, no machine path
+        run: python3 scripts/check.py
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: claude plugin validate --strict
+        run: npx -y @anthropic-ai/claude-code@latest plugin validate . --strict
+
+  template:
+    name: Remotion template renders
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: skills/promo-video/template
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: skills/promo-video/template/package-lock.json
+      - run: npm ci
+      - name: ESLint and TypeScript
+        run: npm run lint
+      - name: Render one frame
+        run: npm run still
+      - uses: actions/upload-artifact@v7
+        with:
+          name: still
+          path: skills/promo-video/template/out/still.png
