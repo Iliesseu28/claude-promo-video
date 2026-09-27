@@ -20,7 +20,7 @@ Example video
 The 29-second launch video of [SimplyBar](https://github.com/Iliesseu28/SimplyBar), a free macOS menu bar app,
 made with this skill. Its full source is public: [`tools/promo-video`](https://github.com/Iliesseu28/SimplyBar/tree/main/tools/promo-video).
 
-**Measured cost**: about 1 hour of agent time and about $15 of tokens at API prices, which a Claude subscription
+**Measured cost**: about 15 minutes of agent time and about $3 of tokens at API prices, which a Claude subscription
 covers. A full render then takes about 1 minute on a laptop.
 
 ## What it does
